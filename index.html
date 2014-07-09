@@ -1,0 +1,80 @@
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+  <script type="text/javascript" language="javascript" src="js\jquery-1.7.2.min.js"></script>
+  <script type="text/javascript" language="javascript" src="js\statek.js"></script>
+  <script type="text/javascript" language="javascript" src="js\pocisk.js"></script>
+  <script type="text/javascript" language="javascript" src="js\mucha.js"></script>
+  <script type="text/javascript" language="javascript" src="js\bomba.js"></script>
+  <script type="text/javascript" language="javascript" src="js\game.js"></script>
+  <script type="text/javascript" language="javascript" src="js\koniec.js"></script>
+  <script type="text/javascript" language="javascript" src="js\start.js"></script>
+  <link rel="stylesheet" href="css/main.css"  />
+  
+  
+
+</head>
+ 
+<body>
+  <br><br><br>
+<div id="plansza">
+ <div style="position: relative; top:0px; margin: 0 auto;">
+  SCORE: <input id="dane"  value="0" type="text" />
+  Hi-SCORE: <input id="hiscore"  value="0" type="text" />
+  LIVE:  <input id="zycia" value="3" type="text" />
+  LEVEL: <input id="lvl"   value="1" type="text" />
+ </div>
+ <div id="statek"><img id="obrs" src="img\statek.gif"/></div>
+ <div id="pocisk"></div>
+ 
+</div> 
+
+
+<div id="start">
+ <div id="logo"  >SPACE INVADERS<br> HTML5</div>
+ 
+
+ <button id="przyciskstart"onclick="start();">START</button>
+ <button id="instrukcja"onclick="start();">INSTRUKCJA</button>
+ <button id="intro"onclick="start();">INTRO</button>
+ 
+ 
+ 
+ <div id="info">
+  <marquee>
+  <span class="red">PROGRAMING:</span> MICHAL JABLONIEC
+  <span class="red">GRAPHIC:</span> MICHAL JABLONIEC
+  <span class="red">MUSIC:</span> "A-Journey-Awaits" BY lemon42
+  </marquee>
+ </div>
+ 
+ 
+ 
+ <div id="gameover">
+ GAME OVER
+ 
+ klsjdlfkjasd;lkfja;lskdjf;lskdj
+</div>
+ 
+ 
+</div> 
+
+
+
+
+
+
+<audio id="music" controls="controls" loop="loop" hidden="hidden" autoplay="autoplay">
+ <source src="music\music.mp3" type="audio/mpeg">
+ Twoja przeglądarka nie obsługuje HTML5
+</audio>
+
+<audio id="shot"  controls="controls" hidden="hidden" >
+ <source src="music\rifle.wav" type="audio/mpeg">
+ Twoja przeglądarka nie obsługuje HTML5
+</audio>
+
+
+ </body>
+</html>
+
